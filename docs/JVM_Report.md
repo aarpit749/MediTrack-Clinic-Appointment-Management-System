@@ -26,6 +26,7 @@
    become slow.
    The JIT compiler helps by converting “hot” parts of the code into machine-level instructions. Once compiled, those 
    portions run directly on the CPU, giving much better performance.
+   The interpreter helps with quick startup, and JIT helps with long‑term speed.
 
 5. Write Once, Run Anywhere: Java programs are compiled into platform‑independent bytecode. This bytecode does not 
                              depend on the operating system or hardware directly. When the program runs, the JVM on the 
