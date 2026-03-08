@@ -1,4 +1,4 @@
 package com.airtribe.meditrack.util;
 
-public class CSVUtil {
+public class DataStore {
 }
