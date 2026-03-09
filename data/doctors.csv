@@ -1,0 +1,7 @@
+id,name,age,specialization,fee
+DOC-103,Dr Charu Mehta,38,DERMATOLOGY,500.0
+DOC-102,Dr Bob Iyer,45,ORTHOPEDICS,600.0
+DOC-101,Dr Alice Sharma,40,CARDIOLOGY,700.0
+DOC-117,lucky,13,GENERAL,300.0
+DOC-105,Dr Esha Rao,42,GENERAL,550.0
+DOC-104,Dr Dev Kapoor,50,GENERAL,400.0

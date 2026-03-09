@@ -122,15 +122,30 @@ public class Main {
         switch (ch) {
             case 1 -> {
                 System.out.print("ID: "); String id = sc.nextLine();
-                System.out.println(patientService.searchPatient(id).orElse(null));
+                var opt = patientService.searchPatient(id);
+                if (opt.isPresent()) {
+                    System.out.println(opt.get());
+                } else {
+                    System.out.println("No patient found with ID: " + id);
+                }
             }
             case 2 -> {
                 System.out.print("Name: "); String name = sc.nextLine();
-                patientService.searchPatientByName(name).forEach(System.out::println);
+                var list = patientService.searchPatientByName(name);
+                if (list.isEmpty()) {
+                    System.out.println("No patients matched the name: \"" + name + "\"");
+                } else {
+                    list.forEach(System.out::println);
+                }
             }
             case 3 -> {
                 System.out.print("Age: "); int age = safeInt(sc);
-                patientService.searchPatient(age).forEach(System.out::println);
+                var list = patientService.searchPatient(age);
+                if (list.isEmpty()) {
+                    System.out.println("No patients found with age: " + age);
+                } else {
+                    list.forEach(System.out::println);
+                }
             }
             default -> System.out.println("Invalid option.");
         }
