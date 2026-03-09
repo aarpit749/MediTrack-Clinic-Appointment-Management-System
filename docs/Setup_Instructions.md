@@ -5,7 +5,7 @@ It covers installing Java, configuring the IDE, creating the project structure, 
 application, enabling CSV loading, and generating JavaDoc.
 
 1. Install Java (JDK 17 or above)
-   For this project, I used Java 17.
+   For this project, I used Java 21.
    Steps I followed:
 
 Downloaded the JDK installer from the official website. Installed it using the default settings. Verified the 
@@ -15,11 +15,11 @@ java -version
 javac -version
 
 Both commands showed the installed Java version.
-
+![img.png](Images/img.png)
 2. Configure JAVA_HOME (recommended)
 
 Opened Environment Variables on Windows. Created a variable:
-JAVA_HOME = C:\Program Files\Java\jdk-17.x.x
+JAVA_HOME = C:\Program Files\Java\jdk-21.0.2
 
 Added this to PATH:
 %JAVA_HOME%\bin
@@ -30,7 +30,7 @@ echo %JAVA_HOME%
 3. Install IntelliJ IDEA Community Edition
 
 Downloaded IntelliJ IDEA Community Edition from JetBrains. Installed it using the default options. Opened IntelliJ and 
-created a new Java Project. Selected Project SDK: Java 17.
+created a new Java Project. Selected Project SDK: Java 21.
 
 4. Import the MediTrack Project from GitHub:
    git clone https://github.com/aarpit749/MediTrack-Clinic-Appointment-Management-System.git
